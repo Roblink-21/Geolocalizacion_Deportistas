@@ -1,0 +1,17 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div #map id="map" [hidden]="!user"></div>
+  <div *ngIf="user">
+
+    <ion-item>
+      <ion-label>User ID: {{ user.uid }}</ion-label>
+    </ion-item>
+  </div>
+</ion-content>
