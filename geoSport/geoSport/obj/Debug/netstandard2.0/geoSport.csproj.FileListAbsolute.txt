@@ -1,0 +1,15 @@
+C:\Users\SKY\Documents\EPN_5Semestre\AppMovile\XAMARI\geoSport\geoSport\geoSport\obj\Debug\netstandard2.0\geoSport.csproj.AssemblyReference.cache
+C:\Users\SKY\Documents\EPN_5Semestre\AppMovile\XAMARI\geoSport\geoSport\geoSport\obj\Debug\netstandard2.0\geoSport.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SKY\Documents\EPN_5Semestre\AppMovile\XAMARI\geoSport\geoSport\geoSport\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\SKY\Documents\EPN_5Semestre\AppMovile\XAMARI\geoSport\geoSport\geoSport\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\SKY\Documents\EPN_5Semestre\AppMovile\XAMARI\geoSport\geoSport\geoSport\obj\Debug\netstandard2.0\geoSport.AssemblyInfoInputs.cache
+C:\Users\SKY\Documents\EPN_5Semestre\AppMovile\XAMARI\geoSport\geoSport\geoSport\obj\Debug\netstandard2.0\geoSport.AssemblyInfo.cs
+C:\Users\SKY\Documents\EPN_5Semestre\AppMovile\XAMARI\geoSport\geoSport\geoSport\obj\Debug\netstandard2.0\geoSport.csproj.CoreCompileInputs.cache
+C:\Users\SKY\Documents\EPN_5Semestre\AppMovile\XAMARI\geoSport\geoSport\geoSport\obj\Debug\netstandard2.0\geoSport.dll
+C:\Users\SKY\Documents\EPN_5Semestre\AppMovile\XAMARI\geoSport\geoSport\geoSport\obj\Debug\netstandard2.0\refint\geoSport.dll
+C:\Users\SKY\Documents\EPN_5Semestre\AppMovile\XAMARI\geoSport\geoSport\geoSport\obj\Debug\netstandard2.0\geoSport.pdb
+C:\Users\SKY\Documents\EPN_5Semestre\AppMovile\XAMARI\geoSport\geoSport\geoSport\bin\Debug\netstandard2.0\geoSport.deps.json
+C:\Users\SKY\Documents\EPN_5Semestre\AppMovile\XAMARI\geoSport\geoSport\geoSport\bin\Debug\netstandard2.0\geoSport.dll
+C:\Users\SKY\Documents\EPN_5Semestre\AppMovile\XAMARI\geoSport\geoSport\geoSport\bin\Debug\netstandard2.0\geoSport.pdb
+C:\Users\SKY\Documents\EPN_5Semestre\AppMovile\XAMARI\geoSport\geoSport\geoSport\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\SKY\Documents\EPN_5Semestre\AppMovile\XAMARI\geoSport\geoSport\geoSport\obj\Debug\netstandard2.0\ref\geoSport.dll
