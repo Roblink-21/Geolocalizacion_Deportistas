@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "aIT9Z6oKNq4eoyDz4w8eGtCl9zX2F1CflJhvBwRaFJRLTBl2zVcOqS6PKxMpouyeRcQVTJ0B5GI/WdjuHPQeAA==",
+  "dgSpecHash": "LgDMmXArQmlOBfneKpK/VE47rRyxrfVZD7TPPNbgs+sEeLRlAo1UMzl92aP4ZCnJtPiWThtYtjcwoqoRaqlujg==",
   "success": true,
   "projectFilePath": "C:\\Users\\SKY\\Documents\\EPN_5Semestre\\AppMovile\\XAMARI\\geoSport\\geoSport\\geoSport\\geoSport.csproj",
   "expectedPackageFiles": [
@@ -20,6 +20,7 @@
     "C:\\Users\\SKY\\.nuget\\packages\\system.runtime.interopservices.windowsruntime\\4.3.0\\system.runtime.interopservices.windowsruntime.4.3.0.nupkg.sha512",
     "C:\\Users\\SKY\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
     "C:\\Users\\SKY\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
+    "C:\\Users\\SKY\\.nuget\\packages\\xam.plugin.geolocator\\4.5.0.6\\xam.plugin.geolocator.4.5.0.6.nupkg.sha512",
     "C:\\Users\\SKY\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
     "C:\\Users\\SKY\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
   ],

@@ -13,9 +13,14 @@
                 <Entry x:Name="txtId" Placeholder="ID"></Entry>
                 <Entry x:Name="txtName" Placeholder="Enter Name"></Entry>
 
+                
 
                 <Label x:Name="urlt" ></Label>
-                
+
+                <Button Text="Start/Stop" Clicked="Button_Clicked" />
+
+                <Label x:Name="locationLabel" />
+
                 <StackLayout  HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
                     <Button x:Name="btnAdd" WidthRequest="200" Text="Add" Clicked="BtnAdd_Clicked"/>
                     <Button x:Name="btnRetrive" WidthRequest="200" Text="Retrive" Clicked="BtnRetrive_Clicked"/>
@@ -32,9 +37,9 @@
                             <ViewCell>
                                 <StackLayout Padding="15,0">
                                     <Grid ColumnDefinitions="*,*">
-                                        <Label Text="{Binding Name}"/>
+                                        <Label Text="{Binding Latitud}"/>
                                         <Button
-                                            Clicked="Button_Clicked"
+                                            Clicked="Button_url"
                                             Grid.Column="1"
                                             BackgroundColor="Aqua"
                                             CornerRadius="32"
@@ -54,6 +59,9 @@
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
+
+               
+
             </StackLayout>
         </StackLayout>
     </StackLayout>
