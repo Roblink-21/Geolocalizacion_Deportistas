@@ -15,6 +15,15 @@ https://github.com/CarlosAndresQuel00/Geolocalizacion_Deportistas
 
 # Videos
 
+## Video de Explicacion
+
+### Aplicacion Web
+
+### Aplicacion Movil
+
+## Manual de Usuario
+
+
 
 # Link de la apk publicada en Uptodown
 
