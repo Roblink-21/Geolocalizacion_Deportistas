@@ -53,8 +53,8 @@ La aplicacion usa Realtime Database como alojamiento y sincronizacion de los dat
 
 * La aplicacion cuenta con la funcionalidad de mostrar el listado de los usuarios registrados en la aplicacion.
 
-![image](https://user-images.githubusercontent.com/58127103/188864199-f22e6e68-b39e-4793-80bc-2f26028f79a6.png)
+![image](https://user-images.githubusercontent.com/58127103/188864146-295481c2-72f8-4a40-8abd-e82368403a7a.png)
 
 La aplicación muestra en un mapa con geolocalización la posición de los usuarios
 
-![image](https://user-images.githubusercontent.com/58127103/188864146-295481c2-72f8-4a40-8abd-e82368403a7a.png)
+![image](https://user-images.githubusercontent.com/58127103/188864199-f22e6e68-b39e-4793-80bc-2f26028f79a6.png)
