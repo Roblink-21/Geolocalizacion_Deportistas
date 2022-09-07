@@ -91,10 +91,10 @@ namespace geoSport
             var button = (Button)sender;
             var GeoPosi = button.ClassId;
 
-            string url = "https://www.google.com.ec/maps/@" + GeoPosi.ToString();
+            string url = "https://maps.google.com/?ll=" + GeoPosi.ToString() + "&z=18&t=k";
 
-            urlt.Text = url.ToString();
-            //Device.OpenUri(new Uri(url));
+            //urlt.Text = url.ToString();
+            Device.OpenUri(new Uri(url));
         }
 
 

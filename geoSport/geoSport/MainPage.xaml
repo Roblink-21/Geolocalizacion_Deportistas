@@ -14,7 +14,6 @@
                    HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
             </Frame>
 
-            <Label x:Name="urlt" ></Label>
             
             <Button x:Name="noti" Text="Empezar" Clicked="Button_Clicked" />
 

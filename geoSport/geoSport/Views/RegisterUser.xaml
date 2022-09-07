@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="geoSport.Views.RegisterUser">
+    <ContentPage.Content>
+        <StackLayout Padding="15">
+            <Label Text="Registrar nuevo usuario"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"
+                   FontSize="Large"/>
+
+            <Entry Placeholder="Nombre"
+                   x:Name="TxtName"></Entry>
+            <Entry Placeholder="Correo electrónico" 
+                   x:Name="TxtEmail"></Entry>
+            <Entry Placeholder="Contraseña"
+                   IsPassword="True"
+                   x:Name="TxtPassword"></Entry>
+            <Entry IsPassword="True" Placeholder="Confirmar contraseña"
+                   x:Name="TxtConfirmPass"></Entry>
+            <Button Text="Registrar"
+                    BackgroundColor="DeepSkyBlue"
+                    TextColor="white"
+                    x:Name="ButtonRegister"
+                    Clicked="ButtonRegister_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

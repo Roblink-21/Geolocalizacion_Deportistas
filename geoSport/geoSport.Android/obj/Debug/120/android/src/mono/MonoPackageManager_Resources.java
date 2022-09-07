@@ -3,6 +3,7 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "geoSport.Android.dll" comes first in this list. */
 		"geoSport.Android.dll",
+		"Firebase.Auth.dll",
 		"Firebase.dll",
 		"FormsViewGroup.dll",
 		"geoSport.dll",
@@ -10,6 +11,7 @@ public class MonoPackageManager_Resources {
 		"Newtonsoft.Json.dll",
 		"Plugin.CurrentActivity.dll",
 		"Plugin.Geolocator.dll",
+		"Plugin.Media.dll",
 		"Plugin.Permissions.dll",
 		"System.Reactive.dll",
 		"Xamarin.Android.Support.Annotations.dll",

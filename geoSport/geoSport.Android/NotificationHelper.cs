@@ -21,8 +21,8 @@ namespace geoSport.Droid
             var pendingIntent = PendingIntent.GetActivity(context, 0, intent, PendingIntentFlags.UpdateCurrent);
 
             var notificationBuilder = new NotificationCompat.Builder(context, foregroundChannelId)
-                .SetContentTitle("Xamarin.Forms Background Tracking Example")
-                .SetContentText("Your location is being tracked")
+                .SetContentTitle("Tu aplicacion puede correr en segundo plano")
+                .SetContentText("Tu ubicacion sera actualizada cada 5 minutos")
                 .SetSmallIcon(Resource.Drawable.notification_tile_bg)
                 .SetOngoing(true)
                 .SetContentIntent(pendingIntent);

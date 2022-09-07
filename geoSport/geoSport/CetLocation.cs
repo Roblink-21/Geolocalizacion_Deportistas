@@ -21,7 +21,7 @@ namespace geoSport
 					token.ThrowIfCancellationRequested();
 					try
 					{
-						await Task.Delay(2000);
+						await Task.Delay(300000);
 
 						var request = new GeolocationRequest(GeolocationAccuracy.High);
 						var location = await Geolocation.GetLocationAsync(request);

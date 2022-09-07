@@ -1,6 +1,7 @@
 FormsViewGroup.dll
 Plugin.CurrentActivity.dll
 Plugin.Geolocator.dll
+Plugin.Media.dll
 Plugin.Permissions.dll
 Xamarin.AndroidX.Activity.dll
 Xamarin.AndroidX.Annotation.dll

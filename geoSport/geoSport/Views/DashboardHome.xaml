@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="geoSport.Views.DashboardHome" >
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White" >
+
+            <Image Source="https://img.freepik.com/vector-gratis/ilustracion-dia-mundial-bicicleta-dibujos-animados_23-2148934141.jpg?w=2000"
+               HeightRequest="365" />
+
+
+            <Frame
+                CornerRadius="12"
+                Padding="0"
+                BackgroundColor="DeepSkyBlue"
+                Margin="15,10,15,10" 
+                HasShadow="False"
+                    >
+                       <Label Text="Iniciar Sesión"
+                       Grid.Row="0"
+                       Grid.Column="0"
+                       TextColor="White"
+                       Padding="5"
+                       HorizontalOptions="Center"
+                       FontSize="Medium"
+                       
+                       x:Name="LblSingin"
+                       >
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="SingTap"
+                                              Tapped="SingTap_Tapped"></TapGestureRecognizer>
+                    </Label.GestureRecognizers>
+                </Label>
+            </Frame>
+
+            <Label Text="¿No tienes una cuenta?"
+                   FontSize="15" 
+                   HorizontalOptions="Center"
+                   Padding="15" TextColor ="Black"></Label>
+
+            <Label Text="¡Registrate aquí!"
+                       Grid.Row="0"
+                       Grid.Column="0"
+                       TextColor="Blue"
+                       HorizontalOptions="Center"
+                       FontSize="19"
+                       x:Name="LblRegister"
+                       >
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer x:Name="RegisterTap"
+                                              Tapped="RegisterTap_Tapped"></TapGestureRecognizer>
+                </Label.GestureRecognizers>
+            </Label>
+
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

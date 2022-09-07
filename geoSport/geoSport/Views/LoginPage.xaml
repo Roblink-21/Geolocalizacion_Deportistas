@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="geoSport.Views.LoginPage">
+    <ContentPage.Content>
+        <StackLayout Padding="15"
+                     VerticalOptions="Center">
+            <Label Text="Iniciar Sesión"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"
+                   FontSize="Large"/>
+            <Entry Placeholder="Correo electrónico" x:Name="TxtEmail" ></Entry>
+            <Entry Placeholder="Contraseña"
+                   IsPassword="True"
+                   x:Name="TxtPassword"/>
+            <Button Text="Iniciar sesión"
+                    BackgroundColor="DeepSkyBlue"
+                    
+                    x:Name="BtnSignIn"
+                    CornerRadius="15"
+                    Clicked="BtnSignIn_Clicked"></Button>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <!--<Label Text="Register"
+                       Grid.Row="0"
+                       Grid.Column="0"
+                       TextColor="Blue"
+                       HorizontalOptions="Center"
+                       FontSize="Medium"
+                       x:Name="LblRegister"
+                       >
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="RegisterTap"
+                                              Tapped="RegisterTap_Tapped"></TapGestureRecognizer>
+                    </Label.GestureRecognizers>
+                </Label>-->
+                <Label Text="¿Olvidaste tu contraseña?"
+                       Grid.Row="0"
+                       Grid.Column="1"
+                       TextColor="Blue"
+                       HorizontalOptions="Center"
+                       FontSize="Medium">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="ForgotTap"
+                                              Tapped="ForgotTap_Tapped"></TapGestureRecognizer>
+                    </Label.GestureRecognizers>
+                </Label>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

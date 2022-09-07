@@ -1,7 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-
+using geoSport.Views;
 namespace geoSport
 {
     public partial class App : Application
@@ -10,7 +10,7 @@ namespace geoSport
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new DashboardHome();
         }
 
         protected override void OnStart()
