@@ -29,21 +29,22 @@ La aplicación posee un sistema de login completo:
 
 * Recuperar contraseña
 
-![image](https://user-images.githubusercontent.com/58127103/188855439-2002e11c-4023-4972-9293-9c29ffd08eed.png)
+Posee un sistema de recuperación de contraseña ingresando el correo electrónico
 
+![image](https://user-images.githubusercontent.com/58127103/188855439-2002e11c-4023-4972-9293-9c29ffd08eed.png)
 
 
 * La aplicacion cuenta con la funcionalidad de mostrar el listado de los usuarios registrados en la aplicacion.
 
 ![image](https://user-images.githubusercontent.com/58127103/188853533-267964ec-481e-4d5f-9296-e858a6f0fd26.png)
 
-La aplicación debe mostrar en un mapa con geolocalización** la posición de al menos 4
-personas
+La aplicación debe mostrar en un mapa con geolocalización la posición de al menos 4 personas
+
 
 
 ## Funcionamiento
 
-La aplicación debe correr en segundo plano y registrar las geolocalizaciones en una base de datos cada determinado tiempo.
+La aplicación corre en segundo plano y registra las geolocalizaciones en una base de datos cada determinado tiempo.
 
 ![image](https://user-images.githubusercontent.com/58127103/188857939-beef4401-ca15-4bc0-9d83-72b44ce5e3f2.png)
 
