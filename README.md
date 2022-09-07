@@ -53,6 +53,11 @@ Posee un sistema de recuperación de contraseña ingresando el correo electróni
 
 # Funcionamiento
 
+La aplicacion al momento de usar la geolocalizacion, al usuario se mostrara un mensaje de notificacion que le avisara, que la aplicacion seguira trabajando en segundo
+plano.
+
+![image](https://user-images.githubusercontent.com/58041699/188873468-fc97be0b-18a1-4c90-8e00-94ff57b1c2f7.png)
+
 La aplicación corre en segundo plano y registra las geolocalizaciones en una base de datos cada determinado tiempo.
 
 ![image](https://user-images.githubusercontent.com/58127103/188857939-beef4401-ca15-4bc0-9d83-72b44ce5e3f2.png)
