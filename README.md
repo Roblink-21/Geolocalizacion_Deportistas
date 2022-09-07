@@ -15,15 +15,15 @@ https://github.com/CarlosAndresQuel00/Geolocalizacion_Deportistas
 
 # Videos
 
-## Video de Explicacion
-
-https://youtu.be/H5gJtNJiLxw
-
-https://www.youtube.com/watch?v=hp1FFjGX3Zw
+## Video de Explicación
 
 ### Aplicacion Web
 
-### Aplicacion Movil
+https://www.youtube.com/watch?v=hp1FFjGX3Zw
+
+### Aplicacion Móvil
+
+https://youtu.be/H5gJtNJiLxw
 
 ## Manual de Usuario
 
