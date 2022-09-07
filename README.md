@@ -45,7 +45,7 @@ La aplicación debe correr en segundo plano y registrar las geolocalizaciones en
 
 ![image](https://user-images.githubusercontent.com/58127103/188857939-beef4401-ca15-4bc0-9d83-72b44ce5e3f2.png)
 
-La aplicacion usa Realtiem Database como alojamiento y sincronizacion de los datos en tiempo real.
+La aplicacion usa Realtime Database como alojamiento y sincronizacion de los datos en tiempo real.
 
 ![image](https://user-images.githubusercontent.com/58127103/188857291-fb3431af-d83e-459d-87c9-b11f17041bf9.png)
 
