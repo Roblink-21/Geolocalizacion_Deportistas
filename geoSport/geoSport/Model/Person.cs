@@ -12,6 +12,8 @@ namespace geoSport.Model
         public double Longitud { get; set; }
 
         public double Latitud { get; set; }
+
+        public string url { get; set; }
         
     }
 }

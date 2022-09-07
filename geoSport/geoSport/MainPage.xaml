@@ -3,46 +3,80 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="geoSport.MainPage">
 
+
     <StackLayout>
-        <StackLayout>
-            <StackLayout HorizontalOptions="Center" VerticalOptions="Start">
-                <Image x:Name="imgBanner" Source="banner.png" ></Image>
-                <Image Margin="0,0,0,10" HeightRequest="100" Source="firebase.png" ></Image>
-                <Label Margin="0,0,0,10" Text="Firebase Realtime Database" FontAttributes="Bold" FontSize="Large" TextColor="Gray" HorizontalTextAlignment="Center" ></Label>
-                
-                <Entry x:Name="txtId" Placeholder="ID"></Entry>
-                <Entry x:Name="txtName" Placeholder="Enter Name"></Entry>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Start">
 
-                
+            
+            
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text=" Grupo los Amistosos"
+                   HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
 
-                <Label x:Name="urlt" ></Label>
+            <Label x:Name="urlt" ></Label>
+            
+            <Button x:Name="noti" Text="Empezar" Clicked="Button_Clicked" />
 
-                <Button Text="Start/Stop" Clicked="Button_Clicked" />
+            <Label x:Name="locationLabel" />
 
-                <Label x:Name="locationLabel" />
+            <Label x:Name="freshDate"/>
 
-                <StackLayout  HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
-                    <Button x:Name="btnAdd" WidthRequest="200" Text="Add" Clicked="BtnAdd_Clicked"/>
-                    <Button x:Name="btnRetrive" WidthRequest="200" Text="Retrive" Clicked="BtnRetrive_Clicked"/>
-                </StackLayout>
-               
-                <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
-                    <Button x:Name="btnUpdate" WidthRequest="200" Text="Update" Clicked="BtnUpdate_Clicked" />
-                    <Button x:Name="btnDelete" WidthRequest="200" Text="Delete" Clicked="BtnDelete_Clicked" />
-                </StackLayout>
+            <CarouselView x:Name="lstPersons"
+                      IndicatorView="CarouselViewIndicator"
+                      PeekAreaInsets="70">
+                <CarouselView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Horizontal" 
+                                   SnapPointsAlignment="Center" SnapPointsType="Mandatory"/>
+                </CarouselView.ItemsLayout>
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout>
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="CurrentItem">
+                                        <VisualState.Setters>
+                                            <Setter Property="TranslationY" Value="-10" />
+                                        </VisualState.Setters>
+                                    </VisualState>
+                                    <VisualState x:Name="PreviousItem">
+                                        <VisualState.Setters>
+                                            <Setter Property="Opacity" Value="0.25" />
+                                        </VisualState.Setters>
+                                    </VisualState>
+                                    <VisualState x:Name="NextItem">
+                                        <VisualState.Setters>
+                                            <Setter Property="Opacity" Value="0.25" />
+                                        </VisualState.Setters>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <Frame HasShadow="True"
+                               BorderColor="DarkGray"
+                               CornerRadius="5"
+                               Margin="20"
+                               HeightRequest="300" WidthRequest="400"
+                               HorizontalOptions="Center"
+                               VerticalOptions="CenterAndExpand">
+                                <StackLayout>
+                                    <Label Text="{Binding Name}"
+                                       FontAttributes="Bold"
+                                       FontSize="Large"
+                                       HorizontalOptions="Center"
+                                       VerticalOptions="Center" />
 
-                <ListView x:Name="lstPersons"  >
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <ViewCell>
-                                <StackLayout Padding="15,0">
-                                    <Grid ColumnDefinitions="*,*">
-                                        <Label Text="{Binding Latitud}"/>
-                                        <Button
+                                    <Image Source="https://cdn-icons-png.flaticon.com/512/706/706201.png"
+                                            Aspect="AspectFill"
+                                            HeightRequest="150"
+                                            WidthRequest="150"
+                                            HorizontalOptions="Center" />
+
+                                    <Button
                                             Clicked="Button_url"
                                             Grid.Column="1"
                                             BackgroundColor="Aqua"
                                             CornerRadius="32"
+                                            ClassId="{Binding url}"
                                             BorderWidth="0"
                                             HeightRequest="32"
                                             HorizontalOptions="Center"
@@ -52,18 +86,37 @@
                                             Text="->"
                                             VerticalOptions="Center"
                                             WidthRequest="32" >
-                                        </Button>
-                                    </Grid>
+                                    </Button>
+                                    
+
+                                    <BoxView Color="DarkGray"
+                                         HeightRequest="1"
+                                         HorizontalOptions="FillAndExpand"/>
+
+                                    <StackLayout Orientation="Vertical" BindableLayout.ItemsSource="{Binding TeamAffiliations}">
+                                        <Label Text="{Binding .}"
+                                           FontSize="Micro"
+                                           HorizontalTextAlignment="Center"/>
+                                    </StackLayout>
+
                                 </StackLayout>
-                            </ViewCell>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
+                            </Frame>
+                        </StackLayout>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
 
-               
+            <IndicatorView x:Name="CarouselViewIndicator" 
+                       IndicatorColor="LightGray"
+                       SelectedIndicatorColor="DarkGray"
+                       HorizontalOptions="Center" 
+                       Margin="0,20"/>
 
-            </StackLayout>
+
         </StackLayout>
     </StackLayout>
+
+
+
 
 </ContentPage>

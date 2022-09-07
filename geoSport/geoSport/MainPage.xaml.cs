@@ -22,6 +22,7 @@ namespace geoSport
         public MainPage()
         {
             InitializeComponent();
+            OnAppearing();
 
             if (Device.RuntimePlatform == Device.Android)
             {
@@ -30,7 +31,7 @@ namespace geoSport
                         locationLabel.Text += $"{Environment.NewLine}{message.Latitude}, {message.Longitude}, {DateTime.Now.ToLongTimeString()}";
                         lat = message.Latitude;
                         lng = message.Longitude;
-                        
+
                         getLoc();
                         
                         Console.WriteLine($"{message.Latitude}, {message.Longitude}, {DateTime.Now.ToLongTimeString()}");
@@ -61,20 +62,15 @@ namespace geoSport
         public async void getLoc()
         {
             await firebaseHelper.UpdatePerson(1, "Roberth", lng, lat);
-            //txtId.Text = string.Empty;
-            //txtName.Text = string.Empty;
-
-
-            //await DisplayAlert("Success", "Person Updated Successfully", "OK");
-            var allPersons = await firebaseHelper.GetAllPersons();
-            lstPersons.ItemsSource = allPersons;
-
+            OnAppearing();
         }
 
         protected async override void OnAppearing()
         {
-
             base.OnAppearing();
+            
+            freshDate.Text = "Datos actualizados: " + DateTime.Now.ToLongTimeString();
+
             var allPersons = await firebaseHelper.GetAllPersons();
             lstPersons.ItemsSource = allPersons;
         }
@@ -82,9 +78,7 @@ namespace geoSport
         private async void BtnAdd_Clicked(object sender, EventArgs e)
         {
 
-            await firebaseHelper.AddPerson(Convert.ToInt32(txtId.Text), txtName.Text, lng, lat);
-            txtId.Text = string.Empty;
-            txtName.Text = string.Empty;
+            await firebaseHelper.AddPerson(3, "mi", lng, lat);
            
 
             await DisplayAlert("Success", "Person Added Successfully", "OK");
@@ -92,50 +86,15 @@ namespace geoSport
             lstPersons.ItemsSource = allPersons;
         }
 
-        private async void BtnRetrive_Clicked(object sender, EventArgs e)
-        {
-            var person = await firebaseHelper.GetPerson(Convert.ToInt32(txtId.Text));
-            if (person != null)
-            {
-                txtId.Text = person.PersonId.ToString();
-                txtName.Text = person.Name;
-    
-                await DisplayAlert("Success", "Person Retrive Successfully", "OK");
-
-            }
-            else
-            {
-                await DisplayAlert("Success", "No Person Available", "OK");
-            }
-
-        }
-
-        private async void BtnUpdate_Clicked(object sender, EventArgs e)
-        {
-            await firebaseHelper.UpdatePerson(Convert.ToInt32(txtId.Text), txtName.Text, lng, lat);
-            txtId.Text = string.Empty;
-            txtName.Text = string.Empty;
-           
-            
-            await DisplayAlert("Success", "Person Updated Successfully", "OK");
-            var allPersons = await firebaseHelper.GetAllPersons();
-            lstPersons.ItemsSource = allPersons;
-        }
-
-        private async void BtnDelete_Clicked(object sender, EventArgs e)
-        {
-            await firebaseHelper.DeletePerson(Convert.ToInt32(txtId.Text));
-            await DisplayAlert("Success", "Person Deleted Successfully", "OK");
-            var allPersons = await firebaseHelper.GetAllPersons();
-            lstPersons.ItemsSource = allPersons;
-        }
-
         private void Button_url(object sender, EventArgs e)
         {
-            string url = "https://www.google.com.ec/maps/@" + lng + "," + lat;
+            var button = (Button)sender;
+            var GeoPosi = button.ClassId;
 
-            //urlt.Text = url.ToString();
-            Device.OpenUri(new Uri(url));
+            string url = "https://www.google.com.ec/maps/@" + GeoPosi.ToString();
+
+            urlt.Text = url.ToString();
+            //Device.OpenUri(new Uri(url));
         }
 
 
@@ -177,10 +136,12 @@ namespace geoSport
                 if (Preferences.Get("LocationServiceRunning", false) == false)
                 {
                     StartService();
+                    noti.Text = "Detener";
                 }
                 else
                 {
                     StopService();
+                    noti.Text = "Empezar";
                 }
             }
         }

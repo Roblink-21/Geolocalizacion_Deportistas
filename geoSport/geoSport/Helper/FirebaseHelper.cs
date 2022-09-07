@@ -25,7 +25,8 @@ namespace geoSport.Helper
                   Name = item.Object.Name,
                   PersonId = item.Object.PersonId,
                   Longitud = item.Object.Longitud,
-                  Latitud = item.Object.Latitud
+                  Latitud = item.Object.Latitud,
+                  url = item.Object.Longitud.ToString() + "," + item.Object.Latitud.ToString()
 
               }).ToList();
         }
