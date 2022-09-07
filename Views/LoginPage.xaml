@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="GeolocalizacionFire.Views.LoginPage"
+             Shell.NavBarIsVisible="False">
+    
+    
+    <ContentPage.Content>
+        <StackLayout Padding="15"
+                     VerticalOptions="Center">
+            <Label Text="Inicio de sesión"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"
+                   FontSize="Large"/>
+            <Entry Placeholder="Ingrese el correo electrónico" x:Name="TxtEmail" ></Entry>
+            <Entry Placeholder="Ingrese la contraseña"
+                   IsPassword="True"
+                   x:Name="TxtPassword"/>
+            <Button Text="Iniciar sesión"
+                    x:Name="BtnSignIn"
+                    CornerRadius="15"
+                    Clicked="BtnSignIn_Clicked"></Button>
+
+
+            <Button Text="Registrar"
+                    x:Name="BtnSignOut"
+                    CornerRadius="15"
+                    Clicked="SignOut"></Button>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Register"
+                       Grid.Row="0"
+                       Grid.Column="0"
+                       TextColor="Blue"
+                       HorizontalOptions="Center"
+                       FontSize="Medium"
+                       x:Name="LblRegister"
+                       >
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="RegisterTap"
+                                              Tapped="RegisterTap_Tapped"></TapGestureRecognizer>
+                    </Label.GestureRecognizers>
+                </Label>
+                
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
