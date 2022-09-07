@@ -18,8 +18,8 @@ namespace geoSport.Views
         }
         private async void SingTap_Tapped(object sender, EventArgs e)
         {
-            //await Navigation.PushModalAsync(new LoginPage());
-           await Navigation.PushAsync(new NavigationPage(new LoginPage()));
+           //await Navigation.PushModalAsync(new LoginPage());
+           await this.Navigation.PushAsync(new NavigationPage(new LoginPage()));
         }
 
         private async void RegisterTap_Tapped(object sender, EventArgs e)

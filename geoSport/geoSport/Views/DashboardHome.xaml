@@ -23,13 +23,14 @@
                        Padding="5"
                        HorizontalOptions="Center"
                        FontSize="Medium"
-                       
-                       x:Name="LblSingin"
                        >
                     <Label.GestureRecognizers>
                         <TapGestureRecognizer x:Name="SingTap"
                                               Tapped="SingTap_Tapped"></TapGestureRecognizer>
                     </Label.GestureRecognizers>
+                           
+                           
+                           
                 </Label>
             </Frame>
 
@@ -44,7 +45,6 @@
                        TextColor="Blue"
                        HorizontalOptions="Center"
                        FontSize="19"
-                       x:Name="LblRegister"
                        >
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer x:Name="RegisterTap"

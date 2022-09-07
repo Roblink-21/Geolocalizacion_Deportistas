@@ -10,10 +10,10 @@
             <Image x:Name="StudentImage"
                    HeightRequest="150" BackgroundColor="AliceBlue">
 
-            <Image.GestureRecognizers>
-                <TapGestureRecognizer x:Name="ImageTap"
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer x:Name="ImageTap"
                                           Tapped="ImageTap_Tapped"/>
-            </Image.GestureRecognizers>
+                </Image.GestureRecognizers>
             </Image>
 
 

@@ -21,6 +21,8 @@ com.google.android.material.bottomnavigation.BottomNavigationView;C:\Users\SKY\D
 com.google.android.material.tabs.TabLayout;C:\Users\SKY\Documents\EPN_5Semestre\AppMovile\XAMARI\geoSport\geoSport\geoSport.Android\obj\Debug\120\lp\58\jl\res\layout\fallbacktabbardonotuse.xml
 com.google.android.material.tabs.TabLayout;C:\Users\SKY\Documents\EPN_5Semestre\AppMovile\XAMARI\geoSport\geoSport\geoSport.Android\obj\Debug\120\lp\58\jl\res\layout\rootlayout.xml
 com.google.android.material.tabs.TabLayout;C:\Users\SKY\Documents\EPN_5Semestre\AppMovile\XAMARI\geoSport\geoSport\geoSport.Android\obj\Debug\120\lp\58\jl\res\layout\tabbar.xml
+crc643f46942d9dd1fff9.ShellFlyoutLayout;C:\Users\SKY\Documents\EPN_5Semestre\AppMovile\XAMARI\geoSport\geoSport\geoSport.Android\obj\Debug\120\lp\58\jl\res\layout\flyoutcontent.xml
+crc64720bb2db43a66fe9.FormsViewPager;C:\Users\SKY\Documents\EPN_5Semestre\AppMovile\XAMARI\geoSport\geoSport\geoSport.Android\obj\Debug\120\lp\58\jl\res\layout\rootlayout.xml
 declare-styleable;C:\Users\SKY\Documents\EPN_5Semestre\AppMovile\XAMARI\geoSport\geoSport\geoSport.Android\obj\Debug\120\lp\58\jl\res\values\attrs.xml
 external-cache-path;C:\Users\SKY\Documents\EPN_5Semestre\AppMovile\XAMARI\geoSport\geoSport\geoSport.Android\obj\Debug\120\lp\57\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 external-path;C:\Users\SKY\Documents\EPN_5Semestre\AppMovile\XAMARI\geoSport\geoSport\geoSport.Android\obj\Debug\120\lp\57\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml

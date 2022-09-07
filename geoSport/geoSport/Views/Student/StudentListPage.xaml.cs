@@ -51,25 +51,7 @@ namespace geoSport.Views.Student
 
         
 
-        private async void DeleteTapp_Tapped(object sender, EventArgs e)
-        {
-           
-           var response=await DisplayAlert("Delete", "Do you want to delete?","Yes", "No");
-            if(response)
-            {
-                string id = ((TappedEventArgs)e).Parameter.ToString();
-               bool isDelete= await studentRepository.Delete(id);
-                if(isDelete)
-                {
-                    await DisplayAlert("Information", "Student has been deleted.", "Ok");
-                    OnAppearing();
-                }
-                else
-                {
-                    await DisplayAlert("Error", "Student deleted failed.", "Ok");
-                }
-            }
-        }
+       
 
         private async void EditTap_Tapped(object sender, EventArgs e)
         {

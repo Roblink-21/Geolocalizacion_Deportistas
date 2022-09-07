@@ -11,9 +11,14 @@
             <Label Text="" x:Name="LblUser"
                    FontSize="Large"
                    VerticalOptions="Center"></Label>
-            <Button Text="Lista de usuarios"
-                    x:Name="BtnStudentList"
-                    Clicked="BtnStudentList_Clicked"></Button>
+            <Label Text="" x:Name="LblID"
+                   FontSize="Large"
+                   VerticalOptions="Center"></Label>
+            <Button Text="Ver grupo"
+                    x:Name="BtnLocation"
+                    Clicked="butLocation_Clicked"></Button>
+            
+           
             <Button Text="Cambiar contraseña" x:Name="BtnChangePassword" Clicked="BtnChangePassword_Clicked"></Button>
 
             <Button Text="SALIR" x:Name="SalirButton" Clicked="BtnLogout_Clicked"></Button>

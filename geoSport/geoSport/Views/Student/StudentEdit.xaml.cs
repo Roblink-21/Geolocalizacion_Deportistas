@@ -43,15 +43,11 @@ namespace geoSport.Views.Student
             student.Id = TxtId.Text;
             student.Name = name;
             student.Email = email;
-            if(file!=null)
-            {
-                string image = await studentRepository.Upload(file.GetStream(), Path.GetFileName(file.Path));
-                student.Image = image;
-            }
+
             bool isUpdated = await studentRepository.Update(student);
-            if(isUpdated)
+            if (isUpdated)
             {
-               await Navigation.PopModalAsync();
+                await Navigation.PopModalAsync();
             }
             else
             {
@@ -67,9 +63,9 @@ namespace geoSport.Views.Student
             {
                 file = await CrossMedia.Current.PickPhotoAsync(new PickMediaOptions
                 {
-                    PhotoSize=PhotoSize.Medium
+                    PhotoSize = PhotoSize.Medium
                 });
-                if(file==null)
+                if (file == null)
                 {
                     return;
                 }
@@ -78,7 +74,7 @@ namespace geoSport.Views.Student
                     return file.GetStream();
                 });
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
 
             }

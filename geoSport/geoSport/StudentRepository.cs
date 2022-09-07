@@ -51,6 +51,11 @@ namespace geoSport
             return (await firebaseClient.Child(nameof(StudentModel) + "/" + id).OnceSingleAsync<StudentModel>());
         }
 
+        public async Task<StudentModel> GetPerson(string Email)
+        {
+            return (await firebaseClient.Child(nameof(StudentModel) + "/" + Email).OnceSingleAsync<StudentModel>());
+        }
+
         public async Task<bool> Update(StudentModel student)
         {            
             await firebaseClient.Child(nameof(StudentModel) + "/" + student.Id).PutAsync(JsonConvert.SerializeObject(student));

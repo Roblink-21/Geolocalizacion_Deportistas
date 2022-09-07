@@ -7,6 +7,7 @@ using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using geoSport.Views.Student;
+using geoSport.Helper;
 
 namespace geoSport.Views
 {
@@ -14,16 +15,56 @@ namespace geoSport.Views
     public partial class HomePage : ContentPage
     {
         UserRepository _userRepository = new UserRepository();
+        StudentRepository user = new StudentRepository();
+        FirebaseHelper firebaseHelper = new FirebaseHelper();
+        
 
         public HomePage()
         {
             InitializeComponent();
             LblUser.Text = Preferences.Get("userEmail", "default");
+            //getUser();
+            
+
+
         }
+
+        private void Btn_lop(object sender, EventArgs e)
+        {
+            getUser();
+        }
+
+
+        private async void getUser()
+        {
+            
+            string email = Preferences.Get("userEmail", "default");
+
+            var person = await user.GetPerson(email);
+
+            LblID.Text = person.Name.ToString();
+
+
+        }
+
+        private async void addUser()
+        {
+            string email = Preferences.Get("userEmail", "default");
+            
+            await firebaseHelper.AddPerson(3, email, 0, 0);
+        }
+
+
 
         private void BtnStudentList_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new StudentListPage());
+        }
+
+        private void butLocation_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Location());
+
         }
 
         private void BtnChangePassword_Clicked(object sender, EventArgs e)

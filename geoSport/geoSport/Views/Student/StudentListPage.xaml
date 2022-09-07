@@ -74,15 +74,6 @@
                                                               CommandParameter="{Binding Id}"/>
                                             </Image.GestureRecognizers>
                                         </Image>
-                                        <Image Source="delete.png"
-                                       HeightRequest="20"
-                                       WidthRequest="20">
-                                            <Image.GestureRecognizers>
-                                                <TapGestureRecognizer x:Name="DeleteTapp" Tapped="DeleteTapp_Tapped"
-                                                              CommandParameter="{Binding Id}"/>
-                                            </Image.GestureRecognizers>
-
-                                        </Image>
 
                                     </StackLayout>
                                 </StackLayout>

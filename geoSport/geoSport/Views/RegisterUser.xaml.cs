@@ -14,6 +14,8 @@ namespace geoSport.Views
     {
 
         UserRepository _userRepository = new UserRepository();
+        StudentRepository repository = new StudentRepository();
+
         public RegisterUser()
         {
             InitializeComponent();
@@ -27,6 +29,16 @@ namespace geoSport.Views
                 string email = TxtEmail.Text;
                 string password = TxtPassword.Text;
                 string confirmPassword = TxtConfirmPass.Text;
+
+                StudentModel student = new StudentModel();
+                student.Name = name;
+                student.Email = email;
+
+                var isSaved = await repository.Save(student);
+                if (isSaved)
+                {
+                    await DisplayAlert("Information", "Student has been saved.", "Ok");
+                }
                 if (String.IsNullOrEmpty(name))
                 {
                     await DisplayAlert("Warning", "Ingrese el nombre", "Ok");

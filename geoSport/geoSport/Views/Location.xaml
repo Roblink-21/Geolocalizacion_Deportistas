@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="geoSport.Views.Location">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout HorizontalOptions="Center" VerticalOptions="Start">
+
+
+
+                <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                    <Label Text=" Atravesando la distancia "
+                   HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+                </Frame>
+
+
+                <Button x:Name="noti" Text="Empezar" Clicked="Button_Clicked" />
+
+                <Label x:Name="locationLabel" />
+
+                <Label x:Name="freshDate"/>
+
+                <CarouselView x:Name="lstPersons"
+                      IndicatorView="CarouselViewIndicator"
+                      PeekAreaInsets="70">
+                    <CarouselView.ItemsLayout>
+                        <LinearItemsLayout Orientation="Horizontal" 
+                                   SnapPointsAlignment="Center" SnapPointsType="Mandatory"/>
+                    </CarouselView.ItemsLayout>
+                    <CarouselView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout>
+                                <VisualStateManager.VisualStateGroups>
+                                    <VisualStateGroup x:Name="CommonStates">
+                                        <VisualState x:Name="CurrentItem">
+                                            <VisualState.Setters>
+                                                <Setter Property="TranslationY" Value="-10" />
+                                            </VisualState.Setters>
+                                        </VisualState>
+                                        <VisualState x:Name="PreviousItem">
+                                            <VisualState.Setters>
+                                                <Setter Property="Opacity" Value="0.25" />
+                                            </VisualState.Setters>
+                                        </VisualState>
+                                        <VisualState x:Name="NextItem">
+                                            <VisualState.Setters>
+                                                <Setter Property="Opacity" Value="0.25" />
+                                            </VisualState.Setters>
+                                        </VisualState>
+                                    </VisualStateGroup>
+                                </VisualStateManager.VisualStateGroups>
+                                <Frame HasShadow="True"
+                               BorderColor="DarkGray"
+                               CornerRadius="5"
+                               Margin="20"
+                               HeightRequest="300" WidthRequest="400"
+                               HorizontalOptions="Center"
+                               VerticalOptions="CenterAndExpand">
+                                    <StackLayout>
+                                        <Label Text="{Binding Name}"
+                                       FontAttributes="Bold"
+                                       FontSize="Large"
+                                       HorizontalOptions="Center"
+                                       VerticalOptions="Center" />
+
+                                        <Image Source="https://cdn-icons-png.flaticon.com/512/706/706201.png"
+                                            Aspect="AspectFill"
+                                            HeightRequest="150"
+                                            WidthRequest="150"
+                                            HorizontalOptions="Center" />
+
+                                        <Button
+                                            Clicked="Button_url"
+                                            Grid.Column="1"
+                                            BackgroundColor="Aqua"
+                                            CornerRadius="32"
+                                            ClassId="{Binding url}"
+                                            BorderWidth="0"
+                                            HeightRequest="32"
+                                            HorizontalOptions="Center"
+                                            Rotation="180"
+                                            TextColor="White"
+                                            FontSize="10"
+                                            Text="->"
+                                            VerticalOptions="Center"
+                                            WidthRequest="32" >
+                                        </Button>
+
+
+                                        <BoxView Color="DarkGray"
+                                         HeightRequest="1"
+                                         HorizontalOptions="FillAndExpand"/>
+
+                                        <StackLayout Orientation="Vertical" BindableLayout.ItemsSource="{Binding TeamAffiliations}">
+                                            <Label Text="{Binding .}"
+                                           FontSize="Micro"
+                                           HorizontalTextAlignment="Center"/>
+                                        </StackLayout>
+
+                                    </StackLayout>
+                                </Frame>
+                            </StackLayout>
+                        </DataTemplate>
+                    </CarouselView.ItemTemplate>
+                </CarouselView>
+
+                <IndicatorView x:Name="CarouselViewIndicator" 
+                       IndicatorColor="LightGray"
+                       SelectedIndicatorColor="DarkGray"
+                       HorizontalOptions="Center" 
+                       Margin="0,20"/>
+
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
