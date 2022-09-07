@@ -8,3 +8,6 @@
 * Roberth Pincha
 * Carlos Quel
 * Luis Jacome
+
+![image](https://user-images.githubusercontent.com/58127103/188853533-267964ec-481e-4d5f-9296-e858a6f0fd26.png)
+
