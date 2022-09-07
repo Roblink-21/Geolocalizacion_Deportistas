@@ -38,10 +38,12 @@ La aplicación posee un sistema de login completo:
 La aplicación debe mostrar en un mapa con geolocalización** la posición de al menos 4
 personas
 
-La aplicación debe correr en segundo plano y registrar las geolocalizaciones en una base 
-de datos cada determinado tiempo.
 
 ## Funcionamiento
+
+La aplicación debe correr en segundo plano y registrar las geolocalizaciones en una base de datos cada determinado tiempo.
+
+![image](https://user-images.githubusercontent.com/58127103/188857939-beef4401-ca15-4bc0-9d83-72b44ce5e3f2.png)
 
 La aplicacion usa Realtiem Database como alojamiento y sincronizacion de los datos en tiempo real.
 
