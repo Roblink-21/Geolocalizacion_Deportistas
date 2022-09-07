@@ -27,7 +27,7 @@ https://youtu.be/H5gJtNJiLxw
 
 ## Manual de Usuario
 
-
+https://youtu.be/EsuYE2CDkdw
 
 # Link de la apk publicada en Uptodown
 
