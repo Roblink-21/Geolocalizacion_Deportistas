@@ -1,4 +1,4 @@
-# Geolocalizacion_Deportistas
+# Geolocalización de Deportistas
 
 Implementar una aplicación móvil nativa o nativa-híbrida que permita a un grupo de ciclistas o corredores, saber la geolocalización de los demás miembros de su equipo de deportes.
 
@@ -11,7 +11,7 @@ Implementar una aplicación móvil nativa o nativa-híbrida que permita a un gru
 
 ## Videos
 
-## Descripción
+# Descripción
 
 La aplicación desarrollada en Xamarin.forms implementa una base de datos en Firebase registro/login y lectura de otros datos. 
 
@@ -38,7 +38,7 @@ Posee un sistema de recuperación de contraseña ingresando el correo electróni
 
 
 
-## Funcionamiento
+# Funcionamiento
 
 La aplicación corre en segundo plano y registra las geolocalizaciones en una base de datos cada determinado tiempo.
 
