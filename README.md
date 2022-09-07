@@ -36,13 +36,7 @@ Posee un sistema de recuperación de contraseña ingresando el correo electróni
 ![image](https://user-images.githubusercontent.com/58127103/188855439-2002e11c-4023-4972-9293-9c29ffd08eed.png)
 
 
-* La aplicacion cuenta con la funcionalidad de mostrar el listado de los usuarios registrados en la aplicacion.
 
-![image](https://user-images.githubusercontent.com/58127103/188864199-f22e6e68-b39e-4793-80bc-2f26028f79a6.png)
-
-La aplicación muestra en un mapa con geolocalización la posición de los usuarios
-
-![image](https://user-images.githubusercontent.com/58127103/188864146-295481c2-72f8-4a40-8abd-e82368403a7a.png)
 
 ## Funcionamiento
 
@@ -54,3 +48,10 @@ La aplicacion usa Realtime Database como alojamiento y sincronizacion de los dat
 
 ![image](https://user-images.githubusercontent.com/58127103/188857291-fb3431af-d83e-459d-87c9-b11f17041bf9.png)
 
+* La aplicacion cuenta con la funcionalidad de mostrar el listado de los usuarios registrados en la aplicacion.
+
+![image](https://user-images.githubusercontent.com/58127103/188864199-f22e6e68-b39e-4793-80bc-2f26028f79a6.png)
+
+La aplicación muestra en un mapa con geolocalización la posición de los usuarios
+
+![image](https://user-images.githubusercontent.com/58127103/188864146-295481c2-72f8-4a40-8abd-e82368403a7a.png)
