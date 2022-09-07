@@ -38,9 +38,11 @@ Posee un sistema de recuperación de contraseña ingresando el correo electróni
 
 ![image](https://user-images.githubusercontent.com/58127103/188853533-267964ec-481e-4d5f-9296-e858a6f0fd26.png)
 
-La aplicación debe mostrar en un mapa con geolocalización la posición de al menos 4 personas
+La aplicación muestra en un mapa con geolocalización la posición de los usuarios
 
+![image](https://user-images.githubusercontent.com/58127103/188864146-295481c2-72f8-4a40-8abd-e82368403a7a.png)
 
+![image](https://user-images.githubusercontent.com/58127103/188864199-f22e6e68-b39e-4793-80bc-2f26028f79a6.png)
 
 ## Funcionamiento
 
