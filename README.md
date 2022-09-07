@@ -14,7 +14,7 @@ Implementar una aplicación móvil nativa o nativa-híbrida que permita a un gru
 
 # Link de la apk publicada en Uptodown
 
-
+![image](https://user-images.githubusercontent.com/58127103/188867784-21e0c6b2-9ed4-4a38-9a8f-322685204de4.png)
 
 # Descripción
 
