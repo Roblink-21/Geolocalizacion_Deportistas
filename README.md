@@ -11,7 +11,7 @@ Implementar una aplicación móvil nativa o nativa-híbrida que permita a un gru
 
 ## Descripción
 
-La aplicación implementa en Firebase como base de datos para el registro/login y lectrura de usuarios. 
+La aplicación desarrollada en Xamarin.forms implementa en Firebase como base de datos para el registro/login y lectrura de usuarios. 
 
 La aplicación posee un sistema de login completo: 
 
