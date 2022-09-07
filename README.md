@@ -9,6 +9,10 @@ Implementar una aplicación móvil nativa o nativa-híbrida que permita a un gru
 * Carlos Quel
 * Luis Jacome
 
+# Aplicacion Web 
+
+https://github.com/CarlosAndresQuel00/Geolocalizacion_Deportistas
+
 # Videos
 
 
