@@ -17,6 +17,8 @@ https://github.com/CarlosAndresQuel00/Geolocalizacion_Deportistas
 
 ## Video de Explicacion
 
+https://youtu.be/H5gJtNJiLxw
+
 https://www.youtube.com/watch?v=hp1FFjGX3Zw
 
 ### Aplicacion Web
