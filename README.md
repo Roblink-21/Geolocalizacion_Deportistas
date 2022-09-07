@@ -2,14 +2,19 @@
 
 Implementar una aplicación móvil nativa o nativa-híbrida que permita a un grupo de ciclistas o corredores, saber la geolocalización de los demás miembros de su equipo de deportes.
 
-#### Integrantes:
+### Integrantes:
 
 * Wendy Palomo
 * Roberth Pincha
 * Carlos Quel
 * Luis Jacome
 
-## Videos
+# Videos
+
+
+# Link de la apk publicada en Uptodown
+
+
 
 # Descripción
 
@@ -34,8 +39,6 @@ La aplicación posee un sistema de login completo:
 Posee un sistema de recuperación de contraseña ingresando el correo electrónico
 
 ![image](https://user-images.githubusercontent.com/58127103/188855439-2002e11c-4023-4972-9293-9c29ffd08eed.png)
-
-
 
 
 # Funcionamiento
