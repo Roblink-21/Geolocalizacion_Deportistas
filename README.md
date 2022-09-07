@@ -18,6 +18,16 @@ Implementar una aplicación móvil nativa o nativa-híbrida que permita a un gru
 
 # Descripción
 
+En la implementacion de la aplicacion, se hizo uso de plugins como Firebase y de geolocalizacion para ser implementados en el proyecto.
+
+![image](https://user-images.githubusercontent.com/58041699/188872490-e817e5be-4252-4005-8bb6-2138d310e71e.png)
+
+Ademas, la aplicacion debe integrar las opciones necesarias para recuperar los datos de ubicacion, por ello en la aplicacion se deben abilitar los permisos necesarios
+que necesitara la aplicacion para funcionar en un dispositivo movil.
+
+![image](https://user-images.githubusercontent.com/58041699/188872909-ad160c0c-eb89-43a2-9368-2adf92d205c1.png)
+
+
 La aplicación desarrollada en Xamarin.forms implementa una base de datos en Firebase registro/login y lectura de otros datos. 
 
 ![image](https://user-images.githubusercontent.com/58127103/188853533-267964ec-481e-4d5f-9296-e858a6f0fd26.png)
